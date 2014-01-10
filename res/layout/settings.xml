@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/logo">
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <ImageButton
+                android:id="@+id/ibInfo"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@android:color/transparent"
+                android:scaleType="centerInside"
+                android:src="@android:drawable/ic_dialog_info" />
+
+            <ImageView
+                android:id="@+id/ivSettings"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/settings_pressed" />
+
+            <!-- Begin new row -->
+
+            <TextView
+                android:id="@+id/lblHeadsetID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/ibBT"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/headsetID"
+                android:textSize="17dp" />
+
+            <TextView
+                android:id="@+id/tvHeadsetID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/ibBT"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/lblHeadsetID"
+                android:text="@string/none"
+                android:textColor="@android:color/holo_blue_bright"
+                android:textSize="17dp" />
+
+            <ImageButton
+                android:id="@+id/ibBT"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignRight="@+id/ivSettings"
+                android:layout_marginTop="150dp"
+                android:background="@android:color/transparent"
+                android:scaleType="centerInside"
+                android:src="@drawable/bt" />
+
+            <View
+                android:id="@+id/line1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/ibBT"
+                android:layout_marginTop="5dp"
+                android:background="@android:color/black" />
+
+            <!-- End new row -->
+
+
+            <!-- Begin new row -->
+
+            <TextView
+                android:id="@+id/lblDischarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/lblHeadsetID"
+                android:layout_alignTop="@+id/ibReset"
+                android:layout_marginTop="10dp"
+                android:text="@string/discharge"
+                android:textSize="17dp" />
+
+            <TextView
+                android:id="@+id/tvDischarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/ibReset"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/lblDischarge"
+                android:text="@string/none"
+                android:textColor="@android:color/holo_blue_bright"
+                android:textSize="17dp" />
+
+            <ImageButton
+                android:id="@+id/ibReset"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignRight="@+id/ivSettings"
+                android:layout_below="@+id/line1"
+                android:layout_marginTop="5dp"
+                android:background="@android:color/transparent"
+                android:scaleType="centerInside"
+                android:src="@android:drawable/ic_menu_add" />
+
+            <View
+                android:id="@+id/line2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/ibReset"
+                android:layout_marginTop="5dp"
+                android:background="@android:color/black" />
+
+            <!-- End new row -->
+
+
+            <!-- Begin new row -->
+
+            <TextView
+                android:id="@+id/lblTwitter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/lblHeadsetID"
+                android:layout_alignTop="@+id/ibTwitter"
+                android:layout_marginTop="10dp"
+                android:text="@string/twitter"
+                android:textSize="17dp" />
+
+            <TextView
+                android:id="@+id/tvTwitter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/ibTwitter"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/lblTwitter"
+                android:text="@string/none"
+                android:textColor="@android:color/holo_blue_bright"
+                android:textSize="17dp" />
+
+            <ImageButton
+                android:id="@+id/ibTwitter"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignRight="@+id/ivSettings"
+                android:layout_below="@+id/line2"
+                android:layout_marginTop="5dp"
+                android:background="@android:color/transparent"
+                android:scaleType="centerInside"
+                android:src="@android:drawable/ic_menu_agenda" />
+
+            <View
+                android:id="@+id/line3"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/ibTwitter"
+                android:layout_marginTop="5dp"
+                android:background="@android:color/black" />
+
+            <!-- End new row -->
+
+
+            <!-- Begin new row -->
+
+            <TextView
+                android:id="@+id/lblFacebook"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/lblHeadsetID"
+                android:layout_alignTop="@+id/ibFacebook"
+                android:layout_marginTop="10dp"
+                android:text="@string/facebook"
+                android:textSize="17dp" />
+
+            <TextView
+                android:id="@+id/tvFacebook"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/ibFacebook"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/lblFacebook"
+                android:text="@string/none"
+                android:textColor="@android:color/holo_blue_bright"
+                android:textSize="17dp" />
+
+            <com.facebook.widget.LoginButton
+                android:id="@+id/ibFacebook"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/ivSettings"
+                android:layout_below="@+id/line3"
+                android:layout_marginTop="5dp" />
+
+            <!--
+    <ImageButton
+        android:id="@+id/ibFacebook"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@android:color/transparent"
+        android:scaleType="centerInside"
+        android:layout_alignRight="@+id/ivSettings"
+        android:layout_below="@+id/line3"
+        android:layout_marginTop="5dp"
+        android:src="@android:drawable/ic_menu_agenda" />>
+            -->
+
+            <View
+                android:id="@+id/line4"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/ibFacebook"
+                android:layout_marginTop="5dp"
+                android:background="@android:color/black" />
+
+            <!-- End new row -->
+
+
+            <!-- Begin new row -->
+
+            <TextView
+                android:id="@+id/lblFirmware"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/lblHeadsetID"
+                android:layout_alignTop="@+id/ibFirmware"
+                android:layout_marginTop="10dp"
+                android:text="@string/firmware"
+                android:textSize="17dp" />
+
+            <TextView
+                android:id="@+id/tvFirmware"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/ibFirmware"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/lblFirmware"
+                android:text="@string/none"
+                android:textColor="@android:color/holo_blue_bright"
+                android:textSize="17dp" />
+
+            <ImageButton
+                android:id="@+id/ibFirmware"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignRight="@+id/ivSettings"
+                android:layout_below="@+id/line4"
+                android:layout_marginTop="5dp"
+                android:background="@android:color/transparent"
+                android:scaleType="centerInside"
+                android:src="@android:drawable/ic_menu_call" />
+
+            <View
+                android:id="@+id/line5"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/ibFirmware"
+                android:layout_marginTop="5dp"
+                android:background="@android:color/black" />
+
+            <!-- End new row -->
+
+
+            <!-- Begin new row -->
+
+            <TextView
+                android:id="@+id/lblCurrent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/lblHeadsetID"
+                android:layout_below="@id/line5"
+                android:layout_marginTop="10dp"
+                android:text="@string/current"
+                android:textSize="17dp" />
+
+            <TextView
+                android:id="@+id/tvCurrentLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@id/lblCurrent"
+                android:layout_alignBottom="@id/lblCurrent"
+                android:layout_alignLeft="@id/ivSettings"
+                android:text="0.8"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <SeekBar
+                android:id="@+id/sbCurrent"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/tvCurrentLabel"
+                android:layout_toLeftOf="@id/tvCurrentLabel"
+                android:layout_toRightOf="@id/lblCurrent"
+                android:max="@integer/MaxCurrent" />
+
+            <View
+                android:id="@+id/line6"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/sbCurrent"
+                android:layout_marginTop="5dp"
+                android:background="@android:color/black" />
+            <!-- End new row -->
+
+
+            <!-- Begin new row -->
+
+            <TextView
+                android:id="@+id/lblPincode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/lblHeadsetID"
+                android:layout_below="@+id/line6"
+                android:layout_marginTop="10dp"
+                android:text="@string/pincode"
+                android:textSize="17dp" />
+
+            <EditText
+                android:id="@+id/etPincode"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/lblPincode"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/lblPincode"
+                android:inputType="numberPassword"
+                android:maxLength="@integer/max_pass_length" />
+
+            <View
+                android:id="@+id/line7"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/etPincode"
+                android:layout_marginTop="5dp"
+                android:background="@android:color/black" />
+            <!-- End new row -->
+
+
+            <!-- Begin new row -->
+
+            <TextView
+                android:id="@+id/lblActiveMode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/lblHeadsetID"
+                android:layout_below="@+id/line7"
+                android:layout_marginTop="10dp"
+                android:text="@string/active_mode"
+                android:textSize="17dp" />
+
+            <Spinner
+                android:id="@+id/spMode"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/lblActiveMode"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/lblActiveMode"
+                android:entries="@array/modes_array"
+                android:prompt="@string/choose_mode" />
+
+            <View
+                android:id="@+id/line8"
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:layout_below="@id/spMode"
+                android:layout_marginTop="5dp"
+                android:background="@android:color/black" />
+            <!-- End new row -->
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

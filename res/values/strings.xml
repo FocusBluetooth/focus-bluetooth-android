@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">foc.us</string>
+    <string name="app_id">195179963981498</string>
+    <string name="headsetID">Headset ID:</string>
+    <string name="discharge">Discharge:</string>
+    <string name="twitter">Twitter:</string>
+    <string name="facebook">Facebook:</string>
+    <string name="firmware">Firmware:</string>
+    <string name="current">Current:</string>
+    <string name="none">None</string>
+    <string name="selectDevices">Select devices:</string>
+    <string name="ok">OK</string>
+    <string name="press_message">Press B to connect</string>
+    
+ 		<!--  Device activity --> 
+ 	<string name="select_device">Select a device</string>
+ 	<string name="no_ble_devices">No LE devices found.</string>
+    <string name="device">Device</string>
+    <string name="no_device">&lt;Select a device&gt;</string>
+
+    <string name="status">Status</string>
+    <string name="llsWrite">LinkLossAlert</string>
+    <string name="iasWrite">ImmediateAlert</string>
+    <string name="scanning">Scanning for devices...</string>
+
+    <string name="connected">Connected</string>
+    <string name="disconnected">Disconnected</string>
+    <string name="ready">Ready</string>
+    <string name="disconnect">Disconnect</string>
+    <string name="connect">connect</string>
+    <string name="unpair">unpair</string>
+    <string name="pair">pair</string>
+    <string name="removeBond">Remove Bond</string>
+    <string name="paired">paired</string>
+    <string name="popup_title">Are you sure you want exit?</string>
+    <string name="popup_message">Device Quit , Do you want to quit this Application?</string>
+    <string name="popup_yes">YES</string>
+    <string name="popup_no">NO</string>
+    <string name="pincode">Pincode:</string>
+    <string name="active_mode">Active Mode:</string>
+
+    <!--  SettingACtivity -->
+    <string name="device_disconnected">Device is disconnected</string>
+    <string-array name="modes_array">
+        <item>Continuous</item>
+        <item>Pulse</item>
+        <item>Sinus</item>
+        <item>Noise</item>
+        <item>Fake</item>
+    </string-array>
+    <string name="choose_mode">Choose Active Mode</string>
+    <string name="bonded">Bonded</string>
+    <string name="unbonded">Unbonded</string>
+</resources>

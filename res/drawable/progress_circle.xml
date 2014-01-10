@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item>
+        <rotate
+            android:drawable="@drawable/gauge_blue_fill"
+            android:fromDegrees="0"
+            android:pivotX="50%"
+            android:pivotY="50%"
+            android:toDegrees="0" />
+    </item>
+        <item>
+        <shape
+            android:innerRadiusRatio="3.4"
+            android:shape="ring"
+            android:thicknessRatio="7.5" >
+            <gradient
+
+                android:endColor="#ff1BA2DA"
+                android:startColor="#ff1BA2DA"
+                android:type="sweep"
+                android:useLevel="true" />
+        </shape>
+    </item>
+    
+    <item>
+        <rotate
+            android:drawable="@drawable/gauge_blue_bg2"
+            android:fromDegrees="0"
+            android:pivotX="50%"
+            android:pivotY="50%"
+            android:toDegrees="0" />
+    </item>
+
+</layer-list>

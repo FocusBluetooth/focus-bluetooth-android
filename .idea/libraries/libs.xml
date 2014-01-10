@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="libs">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/libs/android-support-v4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/TestFlightLib.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/twitter4j-core-3.0.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/libs/samsung_ble_sdk_200.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

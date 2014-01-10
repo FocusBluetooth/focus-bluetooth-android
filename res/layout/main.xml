@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/logo" >
+
+    <ImageView
+        android:id="@+id/ivGauge"
+        android:layout_width="330dp"
+        android:layout_height="330dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:src="@drawable/gauge_blue_bg" />
+
+    <ImageView
+        android:id="@+id/gauge_fill"
+        android:layout_width="330dp"
+        android:layout_height="330dp"
+        android:layout_alignBottom="@id/ivGauge"
+        android:layout_alignLeft="@id/ivGauge"
+        android:layout_alignRight="@id/ivGauge"
+        android:layout_alignTop="@id/ivGauge"
+        android:src="@drawable/gauge_blue_empty"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/tvValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/ivGauge"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:text="None"
+        android:textColor="@android:color/holo_blue_bright"
+        android:textSize="20dp" />
+<!--  
+    <TextView
+        android:id="@+id/tvText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/ivGauge"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        android:text="@string/press_message"
+        android:textColor="@android:color/holo_blue_bright"
+        android:textSize="18dp"
+        android:textStyle="bold|italic"
+        android:visibility="invisible" />
+-->
+    <RelativeLayout
+        android:id="@+id/diagramLayout"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/tvValue"
+        android:layout_centerHorizontal="true" >
+
+        <com.example.focus.DrawDiagram
+            android:id="@+id/drawDiagram"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/ivGaugeDiagram"
+        android:layout_width="match_parent"
+        android:layout_height="330dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:src="@drawable/gauge_diagram" />
+
+    <ImageView
+        android:id="@+id/ivBattery"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignBottom="@+id/diagramLayout"
+        android:layout_toLeftOf="@+id/diagramLayout"
+        android:src="@drawable/battery_empty" />
+
+    <ImageView
+        android:id="@+id/ivKnob"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignTop="@+id/tvValue"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/knob_low"
+        android:scaleType="matrix"
+        android:src="@drawable/knob_high" />
+
+    <ImageButton
+        android:id="@+id/ibSettings"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@android:color/transparent"
+        android:scaleType="centerInside"
+        android:src="@drawable/settings" />
+
+    <ImageButton
+        android:id="@+id/ibBT"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="10dp"
+        android:background="@android:color/transparent"
+        android:scaleType="centerInside"
+        android:src="@drawable/bt" />
+
+    <ImageButton
+        android:id="@+id/ibChat"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/ibBT"
+        android:layout_marginRight="10dp"
+        android:background="@android:color/transparent"
+        android:scaleType="centerInside"
+        android:src="@drawable/chat" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView1"
+        android:layout_alignParentLeft="true"
+        android:text="Device:" />
+
+    <TextView
+        android:id="@+id/tvText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/ivGauge"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90dp"
+        android:text="@string/press_message"
+        android:textColor="@android:color/holo_blue_bright"
+        android:textSize="15dp"
+        android:textStyle="bold|italic"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/ibSettings"
+        android:text="Connect" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/ivBattery"
+        android:layout_below="@+id/ibSettings"
+        android:text="DiscoverServices" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ibSettings"
+        android:layout_toRightOf="@+id/button1"
+        android:text="Disconnect" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/button3"
+        android:text="Unpair" />
+
+</RelativeLayout>
